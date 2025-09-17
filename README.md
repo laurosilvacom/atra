@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amateur Trail Runners Association (ATRA)
 
-## Getting Started
+A simple, fast website for the Amateur Trail Runners Association. Built with Next.js, React, and Tailwind CSS.
 
-First, run the development server:
+## Quick Start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Prerequisites:
+- Node.js 18+ (recommend 20+)
+- npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run the development server:
 
-## Learn More
+    npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+Build for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start the production server (after build):
 
-## Deploy on Vercel
+    npm run start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Lint the project:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    npm run lint
+
+## Project Structure
+
+- `src/app/`
+  - `layout.tsx` — Root layout and site metadata
+  - `page.tsx` — Home page (ATRA content)
+  - `globals.css` — Global styles (Tailwind CSS)
+- `public/` — Static assets (served at the site root)
+
+## Customization
+
+- Update site title/description in `src/app/layout.tsx`.
+- Edit the home page content in `src/app/page.tsx`.
+- Add new routes by creating folders and `page.tsx` files under `src/app` (for example, `src/app/about/page.tsx`).
+
+## Scripts
+
+- `dev` — Start the dev server with Turbopack
+- `build` — Create an optimized production build
+- `start` — Run the production server
+- `lint` — Run ESLint
+
+## Deployment
+
+- Build the app with `npm run build`, then run `npm run start` on your hosting platform.
+- Ensure the environment uses Node.js 18+ and serves the app on your desired port (default: 3000).
+
+## License
+
+Proprietary — all rights reserved unless otherwise noted.
